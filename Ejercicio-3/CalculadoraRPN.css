@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    height: auto    ;
+    
+
+}
+
+main { 
+    width: auto;   
+    height: auto; 
+    display: grid;
+    grid-template-rows: [liner] 4.3em[botr] 4.3em[oner] 4.3em[twor] 4.3em[threer] 4.3em[fourr] 4.3em[fiver] 4.3em[sixr] 
+    4.3em[sevenr] 4.3em[eightr] 4.3em[niner] 4.3em[tenr] 4.3em[elevenr] 4.3em[twelver]; 
+    grid-template-columns: [botc] 4.3em[onec] 4.3em[twoc] 4.3em[threec] 4.3em[fourc] 4.3em[fivec];
+    font-family: Tahoma, sans-serif;
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #000000;  
+    border-width: 1em;
+    border-style: double;
+
+}
+
+label{
+    grid-row-start: liner;
+    grid-row-end: botr;
+    grid-column: span 3;
+}
+
+label[for="pantalla"]{
+
+    grid-column: span 2;
+}
+
+aside{
+    grid-row-start: twor;
+    grid-row-end: threer;
+    grid-column-start: threec;
+    grid-column-end: fivec;
+    height: 100%;
+    
+    
+}
+
+
+
+
+textarea{
+    background-color: #ffffff;
+    width: auto;
+    color: black;
+    font-size: 150%;
+    grid-column-start: botc;
+    grid-column-end: fivec;
+    grid-row-start: botr;
+    grid-row-end: oner;
+    resize: none;
+
+}
+
+
+
+input[type=text]{
+    
+    background-color: #ffffff;
+    width: auto;
+    color: black;
+    font-size: 150%;
+    grid-column-start: botc;
+    grid-column-end: fivec;
+    grid-row-start: oner;
+    grid-row-end: twor;
+                                                
+}
+
+
+input{
+    height: 70%;
+    align-self: center;
+    margin-left: 0.5em;
+    margin-right : 0.5em;
+    background-color:white;
+    
+}
+textarea{
+    overflow-y: scroll;
+}
+
+
